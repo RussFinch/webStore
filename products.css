@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.search  {
+    width: 100%;
+    position: relative
+} 
+.searchTerm  {
+    float: left;
+    width: 100%;
+    border: 3px solid #00B4CC;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+.searchTerm:focus  {
+    color: #00B4CC;
+}
+.searchButton  {
+    position: absolute;  
+    right: -50px;
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.wrap  {
+    width: 30%;
+    position: absolute;
+    top: 25px;
+    right: 55px;
+    transform: translate(0%, -50%);
+  }
+#headingPic  {
+    float: left;
+    height: 100px;
+    width: auto;
+    padding-right: 20px
+}
+#mainHeading  {
+    font-family: Helvetica;
+    position: relative;
+    padding-top: 25px;
+    left: 20%;
+    margin-bottom: 50px;
+    font-size: 32pt;
+}
+h2  {
+    text-align: center;
+}
+.siteLinksLi  {
+	display: inline;
+	font-family: Helvetica;
+    padding-right: 15%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style-type: none;
+}
+#siteLinksList {
+    text-align: left;
+    font-size: 18pt;
+    padding: 20px;
+    background-color: #00B4CC;
+}
+.NavHyperLinks {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; 
+}
+article  {
+    width: 32.4%;
+    margin-bottom: 5px;
+	height: auto;
+	border: solid;
+	border-color: lightgray;
+	display: inline-block;
+}
+p  {
+    padding-left: 10px;
+}
+#colorBox  {
+    background-color: #00B4CC;
+    height: 25px;
+}
+footer  {
+    text-align: center;
+}
