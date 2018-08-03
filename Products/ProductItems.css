@@ -77,19 +77,25 @@ a:hover {
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; 
 }
 article  {
-    width: 24%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 5px;
-	height: 300px;
+	height: auto;
 	border: solid;
-	border-color: lightgray;
-	display: inline-block;
+    border-color: lightgray;;
 }
 .articlePic  {
-    width: 150px;
+    width: auto;
     height: auto;
 }
-p  {
-    padding-left: 10px;
+img  {
+    display: block;
+    margin: 0 auto;
+}
+#prodDetails  {
+    list-style-type: none;
+    text-align: center;
 }
 #colorBox  {
     background-color: #00B4CC;
