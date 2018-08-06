@@ -9,7 +9,7 @@
     width: 100%;
     border: 3px solid #00B4CC;
     padding: 5px;
-    height: 20px;
+    height: 36px;
     border-radius: 5px;
     outline: none;
     color: #9DBFAF;
@@ -46,6 +46,7 @@
 #mainHeading  {
     font-family: Helvetica;
     position: relative;
+    top: 30px;
     padding-top: 25px;
     left: 20%;
     margin-bottom: 50px;
@@ -55,15 +56,19 @@
     text-align: center;
 }
 #logInButton  {
+    position: relative;
     Float: right;
     border: 3px solid #00B4CC;
+    color:  #00B4CC;
+    background-color: white;
     border-radius: 5px;
-    padding: 20px;
+    padding: 10px;
     font-size: 12pt;
+    bottom: 10px;
 }
 #logInButton:hover  {
     color: white;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; 
+    background-color: #00B4CC
 }
 .siteLinksLi  {
 	display: inline;
@@ -84,8 +89,17 @@
     text-decoration: none;
 }
 a:hover {
-    color: white;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; 
+    color:  #00B4CC;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+.articlePic1  {
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 #colorBox  {
     background-color: #00B4CC;

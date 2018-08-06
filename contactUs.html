@@ -2,9 +2,10 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raspberry Pi Store</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="general.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -55,22 +56,33 @@
                  familiarem conservant accidentia ego praevidere. 
             </p>
         </article>
-    <table>
+    <table class="table table-hover">
         <tr>
-            <td>Name:</td>
-            <td>&emsp;Russell Fincham</td>
-        </tr>
-        <tr>
-            <td>Address 1:</td>
-            <td>&emsp;In a house</td>
-        </tr>
-        <tr>
-            <td>Address 2:</td>
-            <td>&emsp;Somewhere</td>
-        </tr>
-        <tr>
-            <td>Address 3:</td>
-            <td>&emsp;In England</td>
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Address 1</th>
+                    <th scope="col">Address 2</th>
+                    <th scope="col">Address 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Russell Fincham</td>
+                    <td>House number</td>
+                    <td>Street</td>
+                    <td>Town</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jarrod Fincham</td>
+                    <td>Same House</td>
+                    <td>In the same Street</td>
+                    <td>Same town</td>
+                </tr>
+            </tbody>
         </tr>
     </table>
     <div id="colorBox"></div>

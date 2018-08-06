@@ -2,9 +2,10 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raspberry Pi Store</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="Products.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -43,84 +44,90 @@
             </li>
         </ul>
     </nav>
-    <section>
-        <article class="product" id="Product1">
-            <a class="prodHyperLinks" href="Products/Pi3b.html">
-            <img src="Products/Images/Pi3b.jpg" class="articlePic" alt="Pi Picture" />
-            </a>
-            <p>Raspberry Pi 3 - Model B</p>
-        </article>
-        <article class="product" id="Product2">
-            <a class="prodHyperLinks" href="Products/noir-cam.html">
-            <img src="Products/Images/noir-cam_medium.jpg" class="articlePic" alt="Pi Picture" />
-            </a>
-            <p>Pi NoIR Camera Module V2</p>
-        </article>
-        <article class="product" id="Product3">
-            <a class="prodHyperLinks" href="Products/noobs.html">
-            <img src="Products/Images/noobs_medium.jpg" class="articlePic" alt="Pi Picture" />
-            </a>
-            <p>'NOOBS' Preinstalled 16GB</p>
-        </article>
-        <article class="product" id="Product4">
-            <a class="prodHyperLinks" href="Products/Pi3Strarter.html">
-            <img src="Products/Images/Pi3Starter.jpg" class="articlePic" alt="Pi Picture" />
-            </a>
-            <p>Pi 3B+ Starter Kit</p>
-        </article>
-    </section>
-    <section>
-        <article class="product" id="Product5">
-            <a class="prodHyperLinks" href="Products/piBow.html">
-            <img src="Products/Images/piBowCoupeCase.jpg" class="articlePic" alt="Pi Picture" />
-            </a>
-            <p>Pibow 3 Coupé (Pi 3, 2, B+)</p>
-        </article>
-        <article class="product" id="Product6">
-            <a class="prodHyperLinks" href="Products/PiCase.html">
-            <img src="Products/Images/piHeatsinks.jpg" class="articlePic" alt="Pi Picture" />
-            </a>
-            <p>Raspberry Pi Heatsink</p>
-        </article>
-        <article class="product" id="Product7">
-            <a class="prodHyperLinks" href="Products/PiHeatsinks.html">
-            <img src="Products/Images/piPower.jpg" class="articlePic" alt="Pi Picture" />
-            </a>
-            <p>Pi 3 Universal Power Supply</p>
-        </article>
-        <article class="product" id="Product8">
-            <a class="prodHyperLinks" href="Products/PiPower.html">
-            <img src="Products/Images/piScreen.jpg" class="articlePic" alt="Pi Picture" />
-            </a>
-            <p>7" Touchscreen Display</p>
-        </article>
-    </section>
-    <section>
-         <article class="product" id="Product9">
-            <a class="prodHyperLinks" href="Products/PiScreen.html">
-            <img src="Products/Images/piScreenCase.jpg" class="articlePic" alt="Pi Picture" />
-            </a>
-            <p>Pi Official 7" Touchscreen</p>
-        </article>
-        <article class="product" id="Product10">
-            <a class="prodHyperLinks" href="Products/PiScreenCase.html">
-            <img src="Products/Images/piZeroKit.jpg" class="articlePic" alt="Pi Picture" />
-            </a>
-            <p>Pi Zero Kit</p>
-        </article>
-        <article class="product" id="Product11">
-            <a class="prodHyperLinks" href="Products/PiZeroKit.html">
-            <img src="Products/Images/PiCase.jpg" class="articlePic" alt="Pi Picture" />
-            </a>
-            <p>Pi 3 Case - Black/Grey</p>
-        </article>
-        <article class="product" id="Product12">
-            <a class="prodHyperLinks" href="Products/unicornPhat.html">
-            <img src="Products/Images/unicornPhat.jpg" class="articlePic" alt="Pi Picture" />
-            </a>
-            <p>Unicorn pHat</p>
-        </article>
-    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <a class="prodHyperLinks" href="Products/Pi3b.html">
+                    <img src="Products/Images/Pi3b.jpg" class="img-thumbnail" alt="Image Thumbnail" />
+                    </a>
+                    <p>Raspberry Pi 3 - Model B</p>
+            </div>
+            <div class="col-sm-3">
+                <a class="prodHyperLinks" href="Products/noir-cam.html">
+                    <img src="Products/Images/noir-cam_medium.jpg" class="img-thumbnail" alt="Image Thumbnail" />
+                    </a>
+                    <p>Pi NoIR Camera Module V2</p>
+            </div>
+            <div class="col-sm-3">
+                <a class="prodHyperLinks" href="Products/noobs.html">
+                    <img src="Products/Images/noobs_medium.jpg" class="img-thumbnail" alt="Image Thumbnail" />
+                    </a>
+                    <p>'NOOBS' Preinstalled 16GB</p>
+            </div>
+            <div class="col-sm-3">
+                <a class="prodHyperLinks" href="Products/Pi3Strarter.html">
+                    <img src="Products/Images/Pi3Starter.jpg" class="img-thumbnail" alt="Image Thumbnail" />
+                    </a>
+                    <p>Pi 3B+ Starter Kit</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <a class="prodHyperLinks" href="Products/piBow.html">
+                    <img src="Products/Images/piBowCoupeCase.jpg" class="img-thumbnail" alt="Image Thumbnail" />
+                    </a>
+                    <p>Pibow 3 Coupé (Pi 3, 2, B+)</p>
+            </div>
+                <div class="col-sm-3">
+                    <a class="prodHyperLinks" href="Products/PiCase.html">
+                        <img src="Products/Images/piHeatsinks.jpg" class="img-thumbnail" alt="Image Thumbnail" />
+                        </a>
+                        <p>Raspberry Pi Heatsink</p>
+            </div>
+            <div class="col-sm-3">
+                    <a class="prodHyperLinks" href="Products/PiHeatsinks.html">
+                        <img src="Products/Images/piPower.jpg" class="img-thumbnail" alt="Image Thumbnail" />
+                        </a>
+                        <p>Pi 3 Universal Power Supply</p>
+            </div>
+            <div class="col-sm-3">
+                    <a class="prodHyperLinks" href="Products/PiPower.html">
+                        <img src="Products/Images/piScreen.jpg" class="img-thumbnail" alt="Image Thumbnail" />
+                        </a>
+                        <p>7" Touchscreen Display</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <a class="prodHyperLinks" href="Products/PiScreen.html">
+                        <img src="Products/Images/piScreenCase.jpg" class="img-thumbnail" alt="Image Thumbnail" />
+                        </a>
+                        <p>Pi Official 7" Touchscreen</p>
+                </div>
+                    <div class="col-sm-3">
+                            <a class="prodHyperLinks" href="Products/PiScreenCase.html">
+                                <img src="Products/Images/piZeroKit.jpg" class="img-thumbnail" alt="Image Thumbnail" />
+                                </a>
+                                <p>Pi Zero Kit</p>   
+                </div>
+                <div class="col-sm-3">
+                        <a class="prodHyperLinks" href="Products/PiZeroKit.html">
+                            <img src="Products/Images/PiCase.jpg" class="img-thumbnail" alt="Image Thumbnail" />
+                            </a>
+                            <p>Pi 3 Case - Black/Grey</p>
+                </div>
+                <div class="col-sm-3">
+                        <a class="prodHyperLinks" href="Products/unicornPhat.html">
+                            <img src="Products/Images/unicornPhat.jpg" class="img-thumbnail" alt="Image Thumbnail" />
+                            </a>
+                            <p>Unicorn pHat</p>
+                </div>
+            </div>
+        </div>
     <div id="colorBox"></div>
 </body>
 <footer>
