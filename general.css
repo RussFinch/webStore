@@ -101,6 +101,11 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
 }
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+  }
 #colorBox  {
     background-color: #00B4CC;
     height: 25px;

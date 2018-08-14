@@ -89,6 +89,24 @@
             </tbody>
         </tr>
     </table>
+    <h3>We're Here!</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+            // Initialize and add the map
+            function initMap() {
+              // The location of Uluru
+              var home = {lat: 51.266, lng: -1.092};
+              // The map, centered at Uluru
+              var map = new google.maps.Map(
+                  document.getElementById('map'), {zoom: 4, center: home});
+              // The marker, positioned at Uluru
+              var marker = new google.maps.Marker({position: home, map: map});
+            }
+                </script>
+    <script async defer
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-I7AkW31crr7aSOycKV0H73nploPZR7E&callback=initMap">
+    </script>
     <div id="colorBox"></div>
 <!--===============================================================================================-->    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
