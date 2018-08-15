@@ -30,10 +30,11 @@
         <h2 id="subHeading">Products</h2>
             <div class="cartLoginButtons-grp" role="group">
                 <a id="cartHyperLink" href="/Users/russellfincham/Programming/webstore/">
-                    <button id="cartButton" class="btn btn-info" type="button" onclick="cart.html">
+<!-------------------  Move Cart Button back to here when link to form required ---------------------------------->  
+                </a>
+                <button id="cartButton" class="btn btn-info" type="button" onclick="cartTotal()">
                         <i class="fa fa-shopping-cart"></i>
                     </button>
-                </a>
                 <a id="loginHyperLink" href="/Users/russellfincham/Programming/webstore/login.html">
                     <button id="logInButton" class="btn btn-info" type="button" onclick="login.html">LogIn</button>
                 </a>
@@ -62,7 +63,7 @@
                 <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/Pi3b.html">
                     <img src="/Users/russellfincham/Programming/webstore/Products/Images/Pi3b.jpg" class="img-thumbnail" alt="Image Thumbnail" />
                 </a>
-                <button class="cart-btn" onclick="addToCart()">Add to Cart</button>
+                <button class="cart-btn" onclick="addToCart('Raspberry Pi 3 - Model B', '£32.00')">Add to Cart</button>
                 <p>Raspberry Pi 3 - Model B</p>
                 <p>£32.00</p>
             </div>
@@ -70,7 +71,7 @@
                 <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/noir-cam.html">
                     <img src="/Users/russellfincham/Programming/webstore/Products/Images/noir-cam_medium.jpg" class="img-thumbnail" alt="Image Thumbnail" />
                 </a>
-                <button class="cart-btn" onclick="addToCart()">Add to Cart</button>
+                <button class="cart-btn" onclick="addToCart('Pi NoIR Camera Module V2','£24.00')">Add to Cart</button>
                 <p>Pi NoIR Camera Module V2</p>
                 <p>£24.00</p>
             </div>
@@ -78,7 +79,7 @@
                 <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/noobs.html">
                     <img src="/Users/russellfincham/Programming/webstore/Products/Images/noobs_medium.jpg" class="img-thumbnail" alt="Image Thumbnail" />
                 </a>
-                <button class="cart-btn" onclick="addToCart()">Add to Cart</button>
+                <button class="cart-btn" onclick="addToCart('NOOBS Preinstalled 16GB','£9.00')">Add to Cart</button>
                 <p>'NOOBS' Preinstalled 16GB</p>
                 <p>£9.00</p>
             </div>
@@ -86,7 +87,7 @@
                 <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/Pi3Starter.html">
                     <img src="/Users/russellfincham/Programming/webstore/Products/Images/Pi3Starter.jpg" class="img-thumbnail" alt="Image Thumbnail" />
                 </a>
-                <button class="cart-btn" onclick="addToCart()">Add to Cart</button>
+                <button class="cart-btn" onclick="addToCart('Raspberry Pi 3B+ Starter Kit','£60.00')">Add to Cart</button>
                 <p>Raspberry Pi 3B+ Starter Kit</p>
                 <p>£60.00</p>
             </div>
@@ -98,7 +99,7 @@
                 <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/piBow.html">
                     <img src="/Users/russellfincham/Programming/webstore/Products/Images/piBowCoupeCase.jpg" class="img-thumbnail" alt="Image Thumbnail" />
                 </a>
-                <button class="cart-btn" onclick="addToCart()">Add to Cart</button>
+                <button class="cart-btn" onclick="addToCart('Pibow 3 Coupé (Pi 3, 2, B+)','£8.50')">Add to Cart</button>
                 <p>Pibow 3 Coupé (Pi 3, 2, B+)</p>
                 <p>£8.50</p>
             </div>
@@ -106,7 +107,7 @@
                 <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/PiHeatsinks.html">
                     <img src="/Users/russellfincham/Programming/webstore/Products/Images/piHeatsinks.jpg" class="img-thumbnail" alt="Image Thumbnail" />
                 </a>
-                <button class="cart-btn" onclick="addToCart()">Add to Cart</button>
+                <button class="cart-btn" onclick="addToCart('Raspberry Pi Heatsink','£1.00')">Add to Cart</button>
                 <p>Raspberry Pi Heatsink</p>
                 <p>£1.00</p>
             </div>
@@ -114,7 +115,7 @@
                 <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/PiPower.html">
                     <img src="/Users/russellfincham/Programming/webstore/Products/Images/piPower.jpg" class="img-thumbnail" alt="Image Thumbnail" />
                 </a>
-                <button class="cart-btn" onclick="addToCart()">Add to Cart</button>
+                <button class="cart-btn" onclick="addToCart('Pi 3 Universal Power Supply','£8.00')">Add to Cart</button>
                 <p>Pi 3 Universal Power Supply</p>
                 <p>£8.00</p>
             </div>
@@ -122,7 +123,7 @@
                 <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/PiScreen.html">
                     <img src="/Users/russellfincham/Programming/webstore/Products/Images/piScreen.jpg" class="img-thumbnail" alt="Image Thumbnail" />
                 </a>
-                <button class="cart-btn" onclick="addToCart()">Add to Cart</button>
+                <button class="cart-btn" onclick="addToCart('7inch Touchscreen Display','£60.00')">Add to Cart</button>
                 <p>7" Touchscreen Display</p>
                 <p>£60.00</p>
             </div>
@@ -134,7 +135,7 @@
                 <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/PiScreenCase.html">
                     <img src="/Users/russellfincham/Programming/webstore/Products/Images/piScreenCase.jpg" class="img-thumbnail" alt="Image Thumbnail" />
                 </a>
-                <button class="cart-btn" onclick="addToCart()">Add to Cart</button>
+                <button class="cart-btn" onclick="addToCart('Pi Official 7inch Touchscreen Case','£15.00')">Add to Cart</button>
                 <p>Pi Official 7" Touchscreen Case</p>
                 <p>£15.00</p>
             </div>
@@ -142,7 +143,7 @@
                 <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/PiZeroKit.html">
                     <img src="/Users/russellfincham/Programming/webstore/Products/Images/piZeroKit.jpg" class="img-thumbnail" alt="Image Thumbnail" />
                 </a>
-                <button class="cart-btn" onclick="addToCart()">Add to Cart</button>
+                <button class="cart-btn" onclick="addToCart('Pi Zero Kit','£6.00')">Add to Cart</button>
                 <p>Pi Zero Kit</p> 
                 <p>£6.00</p>  
             </div>
@@ -150,7 +151,7 @@
                 <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/PiCase.html">
                     <img src="/Users/russellfincham/Programming/webstore/Products/Images/PiCase.jpg" class="img-thumbnail" alt="Image Thumbnail" />
                 </a>
-                <button class="cart-btn" onclick="addToCart()">Add to Cart</button>
+                <button class="cart-btn" onclick="addToCart('Pi 3 Case - Black/Gre','£6.00')">Add to Cart</button>
                 <p>Pi 3 Case - Black/Grey</p>
                 <p>£6.00</p>
             </div>
@@ -158,7 +159,7 @@
                 <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/unicornPhat.html">
                     <img src="/Users/russellfincham/Programming/webstore/Products/Images/unicornPhat.jpg" class="img-thumbnail" alt="Image Thumbnail" />
                 </a>
-                <button class="cart-btn" onclick="addToCart()">Add to Cart</button>
+                <button class="cart-btn" onclick="addToCart('Unicorn pHat','£10.00')">Add to Cart</button>
                 <p>Unicorn pHat</p>
                 <p>£10.00</p>
             </div>
