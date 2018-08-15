@@ -54,7 +54,7 @@
 h2  {
     text-align: center;
 }
-#logInButton  {
+#logInButton, #cartButton  {
     position: relative;
     Float: right;
     border: 3px solid #00B4CC;
@@ -65,9 +65,16 @@ h2  {
     font-size: 12pt;
     bottom: 10px;
 }
-#logInButton:hover  {
+#logInButton:hover, #cartButton:hover  {
+    position: relative;
+    Float: right;
+    border: 3px solid #00B4CC;
     color: white;
-    background-color: #00B4CC
+    background-color: #00B4CC;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12pt;
+    bottom: 10px;
 }
 .siteLinksLi  {
 	display: inline;

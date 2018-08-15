@@ -27,10 +27,17 @@
         <img id="headingPic" src="/Users/russellfincham/Programming/webstore/Products/images/Raspberry.jpeg" alt="Rasp Pi"/> 
         <h1 id="mainHeading">Raspberry Pi Store</h1>
         <h2 id="subHeading">Contact Us</h2>
-        <a id="loginHyperLink" href="/Users/russellfincham/Programming/webstore/login.html">
-                <button id="logInButton" type="button" onclick="login.html">LogIn</button>
+        <div class="cartLoginButtons-grp" role="group">
+            <a id="cartHyperLink" href="/Users/russellfincham/Programming/webstore/">
+                <button id="cartButton" class="btn btn-info" type="button" onclick="cart.html">
+                    <i class="fa fa-shopping-cart"></i>
+                </button>
+            </a>
+            <a id="loginHyperLink" href="/Users/russellfincham/Programming/webstore/login.html">
+                <button id="logInButton" class="btn btn-info" type="button" onclick="login.html">LogIn</button>
             </a>
         </div>
+    </div>
     </header>
     <nav id="siteNav">
         <ul id="siteLinksList">

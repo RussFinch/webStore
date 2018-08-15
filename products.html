@@ -11,25 +11,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->  
 
-    <title>Raspberry Pi Store</title>
+<title>Raspberry Pi Store</title>
 </head>
 <body>
     <header class="productsHeader">
-            <div class="wrap">
-                    <div class="search">
-                       <input type="text" class="searchTerm" placeholder="What are you looking for?">
-                       <button type="submit" class="searchButton">
-                         <i class="fa fa-search"></i>
-                      </button>
-                    </div>
-                 </div>
+        <div class="wrap">
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                <button type="submit" class="searchButton">
+                     <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </div>
         <div>
         <img id="headingPic" src="/Users/russellfincham/Programming/webstore/products/images/Raspberry.jpeg" alt="Rasp Pi"/> 
         <h1 id="mainHeading">Raspberry Pi Store</h1>
         <h2 id="subHeading">Products</h2>
-        <a id="loginHyperLink" href="/Users/russellfincham/Programming/webstore/login.html">
-                <button id="logInButton" type="button" onclick="login.html">LogIn</button>
-            </a>
+            <div class="cartLoginButtons-grp" role="group">
+                <a id="cartHyperLink" href="/Users/russellfincham/Programming/webstore/">
+                    <button id="cartButton" class="btn btn-info" type="button" onclick="cart.html">
+                        <i class="fa fa-shopping-cart"></i>
+                    </button>
+                </a>
+                <a id="loginHyperLink" href="/Users/russellfincham/Programming/webstore/login.html">
+                    <button id="logInButton" class="btn btn-info" type="button" onclick="login.html">LogIn</button>
+                </a>
+            </div>
         </div>
     </header>
     <nav id="siteNav">
@@ -53,26 +60,29 @@
             <div class="col-sm-3">
                 <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/Pi3b.html">
                     <img src="/Users/russellfincham/Programming/webstore/Products/Images/Pi3b.jpg" class="img-thumbnail" alt="Image Thumbnail" />
-                    </a>
-                    <p>Raspberry Pi 3 - Model B</p>
+                </a>
+                <p>Raspberry Pi 3 - Model B</p>
+                <p>£32.00</p>
             </div>
             <div class="col-sm-3">
                 <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/noir-cam.html">
                     <img src="/Users/russellfincham/Programming/webstore/Products/Images/noir-cam_medium.jpg" class="img-thumbnail" alt="Image Thumbnail" />
-                    </a>
-                    <p>Pi NoIR Camera Module V2</p>
+                </a>
+                <p>Pi NoIR Camera Module V2</p>
+                <p>£24.00</p>
             </div>
             <div class="col-sm-3">
                 <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/noobs.html">
                     <img src="/Users/russellfincham/Programming/webstore/Products/Images/noobs_medium.jpg" class="img-thumbnail" alt="Image Thumbnail" />
-                    </a>
+                </a>
                     <p>'NOOBS' Preinstalled 16GB</p>
+                    <p>£9.00</p>
             </div>
             <div class="col-sm-3">
                 <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/Pi3Starter.html">
                     <img src="/Users/russellfincham/Programming/webstore/Products/Images/Pi3Starter.jpg" class="img-thumbnail" alt="Image Thumbnail" />
-                    </a>
-                    <p>Pi 3B+ Starter Kit</p>
+                </a>
+                <p>£60.00</p>
             </div>
         </div>
     </div>
@@ -81,57 +91,65 @@
             <div class="col-sm-3">
                 <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/piBow.html">
                     <img src="/Users/russellfincham/Programming/webstore/Products/Images/piBowCoupeCase.jpg" class="img-thumbnail" alt="Image Thumbnail" />
-                    </a>
-                    <p>Pibow 3 Coupé (Pi 3, 2, B+)</p>
-            </div>
-                <div class="col-sm-3">
-                    <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/PiHeatsinks.html">
-                        <img src="/Users/russellfincham/Programming/webstore/Products/Images/piHeatsinks.jpg" class="img-thumbnail" alt="Image Thumbnail" />
-                        </a>
-                        <p>Raspberry Pi Heatsink</p>
+                </a>
+                <p>Pibow 3 Coupé (Pi 3, 2, B+)</p>
+                <p>£8.50</p>
             </div>
             <div class="col-sm-3">
-                    <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/PiPower.html">
-                        <img src="/Users/russellfincham/Programming/webstore/Products/Images/piPower.jpg" class="img-thumbnail" alt="Image Thumbnail" />
-                        </a>
-                        <p>Pi 3 Universal Power Supply</p>
+                <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/PiHeatsinks.html">
+                    <img src="/Users/russellfincham/Programming/webstore/Products/Images/piHeatsinks.jpg" class="img-thumbnail" alt="Image Thumbnail" />
+                </a>
+                <p>Raspberry Pi Heatsink</p>
+                <p>£1.00</p>
             </div>
             <div class="col-sm-3">
-                    <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/PiScreen.html">
-                        <img src="/Users/russellfincham/Programming/webstore/Products/Images/piScreen.jpg" class="img-thumbnail" alt="Image Thumbnail" />
-                        </a>
-                        <p>7" Touchscreen Display</p>
+                <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/PiPower.html">
+                    <img src="/Users/russellfincham/Programming/webstore/Products/Images/piPower.jpg" class="img-thumbnail" alt="Image Thumbnail" />
+                </a>
+                <p>Pi 3 Universal Power Supply</p>
+                <p>£8.00</p>
+            </div>
+            <div class="col-sm-3">
+                <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/PiScreen.html">
+                    <img src="/Users/russellfincham/Programming/webstore/Products/Images/piScreen.jpg" class="img-thumbnail" alt="Image Thumbnail" />
+                </a>
+                <p>7" Touchscreen Display</p>
+                <p>£60.00</p>
             </div>
         </div>
     </div>
     <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/PiScreenCase.html">
-                        <img src="/Users/russellfincham/Programming/webstore/Products/Images/piScreenCase.jpg" class="img-thumbnail" alt="Image Thumbnail" />
-                        </a>
-                        <p>Pi Official 7" Touchscreen</p>
-                </div>
-                    <div class="col-sm-3">
-                            <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/PiZeroKit.html">
-                                <img src="/Users/russellfincham/Programming/webstore/Products/Images/piZeroKit.jpg" class="img-thumbnail" alt="Image Thumbnail" />
-                                </a>
-                                <p>Pi Zero Kit</p>   
-                </div>
-                <div class="col-sm-3">
-                        <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/PiCase.html">
-                            <img src="/Users/russellfincham/Programming/webstore/Products/Images/PiCase.jpg" class="img-thumbnail" alt="Image Thumbnail" />
-                            </a>
-                            <p>Pi 3 Case - Black/Grey</p>
-                </div>
-                <div class="col-sm-3">
-                        <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/unicornPhat.html">
-                            <img src="/Users/russellfincham/Programming/webstore/Products/Images/unicornPhat.jpg" class="img-thumbnail" alt="Image Thumbnail" />
-                            </a>
-                            <p>Unicorn pHat</p>
-                </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/PiScreenCase.html">
+                    <img src="/Users/russellfincham/Programming/webstore/Products/Images/piScreenCase.jpg" class="img-thumbnail" alt="Image Thumbnail" />
+                </a>
+                <p>Pi Official 7" Touchscreen Case</p>
+                <p>£15.00</p>
+            </div>
+            <div class="col-sm-3">
+                <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/PiZeroKit.html">
+                    <img src="/Users/russellfincham/Programming/webstore/Products/Images/piZeroKit.jpg" class="img-thumbnail" alt="Image Thumbnail" />
+                </a>
+                <p>Pi Zero Kit</p> 
+                <p>£6.00</p>  
+            </div>
+            <div class="col-sm-3">
+                <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/PiCase.html">
+                    <img src="/Users/russellfincham/Programming/webstore/Products/Images/PiCase.jpg" class="img-thumbnail" alt="Image Thumbnail" />
+                </a>
+                <p>Pi 3 Case - Black/Grey</p>
+                <p>£6.00</p>
+            </div>
+            <div class="col-sm-3">
+                <a class="prodHyperLinks" href="/Users/russellfincham/Programming/webstore/Products/unicornPhat.html">
+                    <img src="/Users/russellfincham/Programming/webstore/Products/Images/unicornPhat.jpg" class="img-thumbnail" alt="Image Thumbnail" />
+                </a>
+                <p>Unicorn pHat</p>
+                <p>£10.00</p>
             </div>
         </div>
+    </div>
     <div id="colorBox"></div>
 <!--===============================================================================================-->    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
