@@ -95,13 +95,6 @@ h2  {
     color: white;
     text-decoration: none;
 }
-a:hover {
-    color:  #00B4CC;
-    background-color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    padding: 10px;
-}
 article  {
     width: 70%;
     margin-left: auto;
@@ -123,6 +116,19 @@ article  {
 img  {
     display: block;
     margin: 0 auto;
+}
+#cart-btn {
+    color:  white;
+    background-color: #00B4CC; 
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+#cart-btn:hover {
+    color: #00B4CC;
+    background-color: white; 
+    text-decoration: none;
+    border-radius: 5px;
 }
 #prodDetails  {
     list-style-type: none;

@@ -65,7 +65,7 @@ h2  {
     font-size: 12pt;
     bottom: 10px;
 }
-#logInButton:hover, #cartButton:hover  {
+#logInButton:hover,#cartButton:hover {
     position: relative;
     Float: right;
     border: 3px solid #00B4CC;
@@ -94,16 +94,21 @@ h2  {
     color: white;
     text-decoration: none;
 }
-a:hover {
-    color:  #00B4CC;
+.img-thumbnail:hover  {
+    filter: grayscale(100%);
+}
+.cart-btn {
+    color:  white;
+    background-color: #00B4CC; 
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.cart-btn:hover {
+    color: #00B4CC;
     background-color: white; 
     text-decoration: none;
     border-radius: 5px;
-    padding: 10px;
-}
-.img-thumbnail:hover  {
-    transform: scale(0.9);
-    filter: grayscale(100%);
 }
 p  {
     padding-left: 10px;
