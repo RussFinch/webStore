@@ -14,7 +14,7 @@
 
     <title>Raspberry Pi Store</title>
 </head>
-<body>
+<body onload="cartCalculations()">
     <header class="homeHeader">
         <div class="wrap">
             <div class="search">
@@ -56,6 +56,48 @@
             </li>
         </ul>
     </nav>
+    <div>
+        <h4>Your Items:</h4>
+        <br>
+        <form>
+            <div id="cartItems">
+                <script>cartList();</script>
+            </div>
+        </form>
+    </div>
+    <br>
+    <form>
+        <label>Discount Coupon Code</label>
+        <input id="discCoupon" placeholder="Enter Coupon Code" value="">
+        <p>Please enter a discount code if you have one.</p>
+    </form>
+    <button type="button" onclick="discCoupon();">Apply Coupon</button>
+    <br>
+    <br>
+    <form>
+        <h6>Delivery Type?</h6>
+        <div>
+            <p></p>
+            <input type="radio" name="delivery" onclick="showNone();"/>
+            Collection
+            <input type="radio" name="delivery" onclick="showDelOptions();"/>
+            Delivery
+            <div id="delOptions" class="hide">
+                <hr><p>Okay Cool! Here are the two options..</p>
+                <input type="radio" name="delType" onchange="addDelivery(5);">
+                Standard - 5-10 days £5.00 &nbsp;
+                <input type="radio"  name="delType" onchange="addDelivery(10);">
+                Fast - 1-2 days £10.00
+            </div>
+        </div>
+    </form>
+    <div>
+        <br>
+        <p id="total"></p>
+        <p id="VAT"></p>
+        <p id="discount"></p>
+        <p id="totalPlusDel"></p>
+    </div>
     <div id="colorBox"></div>
 <!--===============================================================================================-->    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
