@@ -4,7 +4,6 @@ var discTotal = 0;
 
 function addToCart(name, price) {
 
-    
     var cartItem = {
         itemName: name,
         itemPrice: price,
@@ -87,4 +86,10 @@ function addDelivery(cost) {
 }
 function removeDelivery() {
     
+}
+
+//Generate Order Number
+function orderNo() {
+    var orderID =  ("RPI" + Math.random().toString(36).substring(2, 15));
+    alert("Your order has been confirmed...\nOrder ID:  " + orderID);
 }
