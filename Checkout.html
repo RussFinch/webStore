@@ -3,15 +3,15 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script type="text/javascript" src="/Users/russellfincham/Programming/webstore/main.js"></script>
+<!--===============================================================================================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <!--===============================================================================================--> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<!--===============================================================================================-->  
+<!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="general.css"/>
-<!--===============================================================================================--> 
+<!--===============================================================================================-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================--> 
-
     <title>Raspberry Pi Store</title>
 </head>
 <body onload="cartCalculations()">
@@ -98,6 +98,48 @@
         <p id="discount"></p>
         <p id="totalPlusDel"></p>
     </div>
+    <button id="calcHide" type="button" onclick="hideCalc();">
+        Calculator On/Off
+    </button>
+    <br>
+    <form id="calcForm" name="calculator">
+        <input id="answer" value="">
+        <br>
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button class="btnAC btn-secondary" type="reset" value="Reset">AC</button>
+        </div>
+        <br>
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button class="btn btn-secondary" type="button" value="7" onclick="addToAnswer('7');">7</button>
+            <button class="btn btn-secondary" type="button" value="8" onclick="addToAnswer('8');">8</button>
+            <button class="btn btn-secondary" type="button" value="9" onclick="addToAnswer('9');">9</button>
+            <button class="btnF btn-secondary" type="button" value="*" onclick="addToAnswer('*');">x</button>
+        </div>
+        <br>
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button class="btn btn-secondary" type="button" value="4" onclick="addToAnswer('4');">4</button>
+            <button class="btn btn-secondary" type="button" value="5" onclick="addToAnswer('5');">5</button>
+            <button class="btn btn-secondary" type="button" value="6" onclick="addToAnswer('6');">6</button>
+            <button class="btnF btn-secondary" type="button" value="-" onclick="addToAnswer('-');">-</button>
+        </div>
+        <br>
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button class="btn btn-secondary" type="button" value="1" onclick="addToAnswer('1');">1</button>              
+            <button class="btn btn-secondary" type="button" value="2" onclick="addToAnswer('2');">2</button>           
+            <button class="btn btn-secondary" type="button" value="3" onclick="addToAnswer('3');">3</button>         
+            <button class="btnF btn-secondary" type="button" value="+" onclick="addToAnswer('+');">+</button>
+        </div>
+        <br>
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button class="btn btn-secondary" type="button" value="." onclick="addToAnswer('.');">.</button>
+            <button class="btn btn-secondary" type="button" value="0" onclick="addToAnswer('0');">0</button>
+            <button class="btn btn-secondary" type="button" value="=" onclick="calculate()">=</button>
+            <button class="btnF btn-secondary" type="button" value="/" onclick="addToAnswer('/');">/</button>
+        </div>
+        <br>        
+    </form>
+    <br>
+    <br>
     <div>
         <button type="button" onclick="orderNo();">Confirm Order</button>
     </div>
@@ -108,6 +150,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <!--===============================================================================================-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!--===============================================================================================-->
+    <script type="text/javascript" src="main.js"></script>
 <!--===============================================================================================-->
 </body>
 <footer>

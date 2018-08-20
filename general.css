@@ -39,6 +39,7 @@
 }
 #headingPic  {
     float: left;
+    position: relative;
     height: 100px;
     width: auto;
     padding-right: 20px
@@ -138,4 +139,28 @@
 }
 footer  {
     text-align: center;
+}
+
+/* Checkout Calculator Styling.*/
+#calcForm {
+    display: none;
+}
+
+.btn-secondary {
+    width: 50px;
+    border-radius: 0px;
+}
+
+.btnF {
+    background-color: orange;
+}
+
+.btnAC {
+    width: 198px;
+    background-color: orange; 
+}
+
+#answer {
+    width: 198px;
+    height: 50px;
 }
