@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!--===============================================================================================-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<!--===============================================================================================--> 
+    <!--===============================================================================================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!--===============================================================================================-->
+    <script type="text/javascript" src="main.js"></script>
+<!--===============================================================================================-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="general.css"/>
@@ -49,12 +53,20 @@
                 <a class="NavHyperLinks" href="/Users/russellfincham/Programming/webstore/products.html">Products</a>
             </li>
             <li class="siteLinksLi">
-                <a class="NavHyperLinks" href="/Users/russellfincham/Programming/webstore/About.html">About Us</a>
+                <a id="company" class="NavHyperLinks">Company &#9660&#9650</a>
             </li>
             <li class="siteLinksLi">
-                <a class="NavHyperLinks" href="/Users/russellfincham/Programming/webstore/ContactUs.html">Contact</a>
+                <a id="useful" class="NavHyperLinks">Useful &#9660&#9650</a>
             </li>
         </ul>
+        <div id="companyPanel" class="navPanel" >
+            <a class="NavHyperLinks" href="/Users/russellfincham/Programming/webstore/about.html">About Us</a>
+            <a class="NavHyperLinks" href="/Users/russellfincham/Programming/webstore/contactUs.html">Contact Us</a>
+        </div>
+        <div id="usefulPanel" class="navPanel" >
+            <a class="NavHyperLinks" href="https://www.raspberrypi.org/">raspberrypi.org</a>
+            <a class="NavHyperLinks" href="https://projects.raspberrypi.org/en/">Raspberry Pi Projects</a>
+        </div>
     </nav>
     <div>
         <h4>Your Items:</h4>
@@ -102,6 +114,7 @@
         Calculator On/Off
     </button>
     <br>
+    <div id="calcDiv">
     <form id="calcForm" name="calculator">
         <input id="answer" value="">
         <br>
@@ -138,21 +151,13 @@
         </div>
         <br>        
     </form>
+    </div>
     <br>
     <br>
     <div>
         <button type="button" onclick="orderNo();">Confirm Order</button>
     </div>
     <div id="colorBox"></div>
-<!--===============================================================================================-->    
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<!--===============================================================================================-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<!--===============================================================================================-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<!--===============================================================================================-->
-    <script type="text/javascript" src="main.js"></script>
-<!--===============================================================================================-->
 </body>
 <footer>
     <p> &copy; RussTy Dev Ltd.&nbsp;&nbsp; All Rights Reserved.&nbsp;&nbsp; Created by

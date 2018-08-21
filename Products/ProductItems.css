@@ -66,17 +66,6 @@ h2  {
     font-size: 12pt;
     bottom: 10px;
 }
-#logInButton:hover, #cartButton:hover  {
-    position: relative;
-    Float: right;
-    border: 3px solid #00B4CC;
-    color: white;
-    background-color: #00B4CC;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 12pt;
-    bottom: 10px;
-}
 .siteLinksLi  {
 	display: inline;
 	font-family: Helvetica;
@@ -84,6 +73,7 @@ h2  {
     padding-top: 20px;
     padding-bottom: 20px;
     list-style-type: none;
+    color: white;
 }
 #siteLinksList {
     text-align: left;
@@ -92,8 +82,19 @@ h2  {
     background-color: #00B4CC;
 }
 .NavHyperLinks {
-    color: white;
     text-decoration: none;
+    color: white;
+}
+.navPanel, #company, #useful {
+    padding: 5px;
+    text-align: center;
+    background-color: #00B4CC;
+    border: solid 1px #00B4CC;
+}
+.navPanel {
+    padding: 5px;
+    text-align: center;
+    display: none;
 }
 article  {
     width: 70%;
@@ -124,12 +125,7 @@ img  {
     border-radius: 5px;
     margin: 0 auto;
 }
-#cart-btn:hover {
-    color: #00B4CC;
-    background-color: white; 
-    text-decoration: none;
-    border-radius: 5px;
-}
+
 #prodDetails  {
     list-style-type: none;
     text-align: center;

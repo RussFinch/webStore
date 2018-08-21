@@ -1,14 +1,103 @@
 //JQuery
-/*$(document).ready(function() {
-    alert("This page has loaded!");
+$(document).ready(function() {
+
+    //Recurively fade image header in and out
+    $(function() {
+        var $element = $('#headingPic');
+        function fadeInOut() {
+            $element.fadeIn(3000, function () {
+                $element.fadeOut(3000, function () {
+                    $element.fadeIn(3000, function () {
+                        setTimeout(fadeInOut, 3000);
+                    });
+                });
+            });
+        }
+        fadeInOut();
+    });
+
+    //Color changes for Nav Login Button mouse enter and leave
+    $('#logInButton').mouseenter(function() {
+        $('#logInButton').css( {
+            'position': 'relative',
+            'Float': 'right',
+            'border': '3px solid #00B4CC',
+            'color': 'white',
+            'background-color': '#00B4CC',
+            'border-radius': '5px',
+            'padding': '10px',
+            'font-size': '12pt',
+            'bottom': '10px'
+        });
+    });
+    $('#logInButton').mouseleave(function() {
+        $('#logInButton').css( {
+            'position': 'relative',
+            'Float': 'right',
+            'border': '3px solid #00B4CC',
+            'color': '#00B4CC',
+            'background-color': 'white',
+            'border-radius': '5px',
+            'padding': '10px',
+            'font-size': '12pt',
+            'bottom': '10px'
+        });
+    });
+
+    //Color changes for Nav Cart Button mouse enter
+    $('#cartButton').mouseenter(function() {
+        $('#cartButton').css( {
+            'position': 'relative',
+            'Float': 'right',
+            'border': '3px solid #00B4CC',
+            'color': 'white',
+            'background-color': '#00B4CC',
+            'border-radius': '5px',
+            'padding': '10px',
+            'font-size': '12pt',
+            'bottom': '10px'
+        });
+    });
+    $('#cartButton').mouseleave(function() {
+        $('#cartButton').css( {
+            'position': 'relative',
+            'Float': 'right',
+            'border': '3px solid #00B4CC',
+            'color': '#00B4CC',
+            'background-color': 'white',
+            'border-radius': '5px',
+            'padding': '10px',
+            'font-size': '12pt',
+            'bottom': '10px'
+        });
+    });
+
+    //hover effect for cart add buttons
+    $('#cart-btn').hover(function() {
+        $('#cart-btn').css( {
+            'color': '#00B4CC',
+            'background-color': 'white', 
+            'text-decoration': 'none',
+            'border-radius': '5px'
+        });
+        $('#cart-btn').effect('shake');
+    });
+
+    //Menu and slide functions for Nav bar
+    $("#company").click(function(){
+        $("#companyPanel").slideToggle("fast");    
+    });
+    $("#useful").click(function(){
+        $("#usefulPanel").slideToggle("fast");
+    });
 });
-*/
+
 // Checkout variables.
 var cart = [];
 var discTotal = 0;
 
 //Calculator on/off button variable
-var calcOn = 2;
+var calcOn = 1;
 
 //Add additional items to cart and save to session storage.
 function addToCart(name, price) {
@@ -36,7 +125,7 @@ function cartTotal() {
 //Create table of cart Items for HTML display
 function cartList() {
     var arr = JSON.parse(sessionStorage.getItem("cart"));
-    var html = '<table id="cartItemsTable">';
+    var html = '<table id="cartItemsTable" class="table-hover">';
 
     for (i = 0; i <= arr.length-1; i++) {
         html += '<tr>';
@@ -51,6 +140,7 @@ function cartList() {
     document.body.innerHTML += html;
     div.innerHTML = html + '</table>';
 }
+
 //Calculate item value total and VAT.
 function cartCalculations() {
     var total = cartTotal();
